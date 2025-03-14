@@ -1,9 +1,8 @@
 <?php
+
 declare(strict_types=1);
 
-
 namespace App\Infrastructure\Service;
-
 
 use App\Application\DTO\TransactionRequest;
 use App\Application\DTO\TransactionResponse;

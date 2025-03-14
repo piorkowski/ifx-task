@@ -9,7 +9,8 @@ use App\Domain\BankAccount;
 
 class InMemoryBankAccountRepository implements BankAccountRepositoryInterface
 {
-    private array $accounts = [];
+    /* @var BankAccount[] */
+    private $accounts = [];
 
     public function findById(string $id): ?BankAccount
     {
