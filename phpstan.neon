@@ -1,0 +1,13 @@
+includes:
+	- phpstan-baseline.neon
+
+parameters:
+    level: max
+    checkUninitializedProperties: true
+    parallel:
+        maximumNumberOfProcesses: 64
+        minimumNumberOfJobsPerProcess: 4
+    paths:
+        - src
+        - tests
+    reportUnmatchedIgnoredErrors: false

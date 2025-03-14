@@ -1,0 +1,17 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: docker/php/Dockerfile
+    working_dir: /app
+    volumes:
+      - .:/app
+      - ./var:/app/var
+      - ./vendor:/app/vendor
+    networks:
+      - app-network
+    ports:
+      - "8000:8000"
+
+networks:
+  app-network: ~
